@@ -13,10 +13,10 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // Import your routes here
-// const todoRoutes = require('./routes/todoRoutes');
+import todoRoutes from './routes/todoRoutes.ts';
 
 // Use your routes
-// app.use('/todos', todoRoutes);
+app.use('/todos', todoRoutes);
 
 // Get all todos
 app.get('/todos', async (req, res) => {
