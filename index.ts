@@ -7,7 +7,7 @@ import database from './db.ts'; // Import the database configuration
 dotenv.config();
 
 const app = express();
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 5001;
 
 app.use(bodyParser.json());
 app.use(cors());
